@@ -60,8 +60,8 @@ MATCH (u:User { id: '1' })-[r:BOUGHT]->(v:Videogame)
 RETURN u, v, r
 
 // Recomendacion de videojuego para el usuario con id 1
-MATCH (u:User { id: '1' })-[:IS_FRIEND*2]-(friend)-[:DID]->(r:Rating)-[:OF]->(v:Videogame)
-WHERE NOT (u)-[:DID]->(:Rating)-[:OF]->(v)
+MATCH (u:User { id: '1' })-[:IS_FRIEND]-(friend)-[:DID]->(r:Rating)-[:OF]->(v:Videogame)
+WHERE NOT (u)-[:BOUGHT]->(v)
 RETURN v.title AS videogame, avg(r.stars) AS avg_rating
  ORDER BY avg_rating DESC
 LIMIT 5
