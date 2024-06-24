@@ -6,11 +6,6 @@ const BASE_URL = "http://localhost:3000/api";
 // Función para crear una nueva actividad
 export const createActivity = async (data) => {
   try {
-    alert(
-      "Creating activity with url: " +
-        `${BASE_URL}/activities and body: ` +
-        data
-    );
     const response = await axios.post(`${BASE_URL}/activities`, data);
     return response.data;
   } catch (error) {
