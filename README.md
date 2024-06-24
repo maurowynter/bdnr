@@ -29,4 +29,17 @@ Para configurar y ejecutar el backend, asumiendo que ya se tiene el repositorio 
 3. Instala las dependencias: `npm install`
 4. Inicia el servidor en modo desarrollo: `npm run dev`
 
+# Proyecto de Motor de Recomendaciones
+
+Este proyecto incluye una app desarrollada en Flask que se conecta con una base de datos Neo4j. Al ejecutar la aplicación se carga la base de datos y se pueden usar las consultas del archivo queries.cypher para explorar el grafo desde la interfaz web de Neo4j visitando la url http://localhost:7474/browser/
+
+### Guía de instalación
+
+1. Asegurate tener Python, Flask y Neo4j instalados en tu máquina
+
+### Guía para correr el proyecto
+1. Abrir una terminal y correr el comando `neo4j start`
+2. Moverse al directorio 'recommendations' dentro del repositorio
+3. Correr el comando `python3 run.py` (o ajustar para otras versiones de Python)
+
 
