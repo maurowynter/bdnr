@@ -111,6 +111,8 @@ visits = [
     {'user_id': '3', 'videogame_id': '104'},
     {'user_id': '4', 'videogame_id': '105'},
     {'user_id': '5', 'videogame_id': '106'},
+    {'user_id': '1', 'videogame_id': '104'},
+    {'user_id': '1', 'videogame_id': '105'}
 ]
 
 purchases = [
@@ -128,7 +130,9 @@ purchases = [
     {'user_id': '2', 'videogame_id': '101'},
     {'user_id': '6', 'videogame_id': '107'},
     {'user_id': '8', 'videogame_id': '109'},
-    {'user_id': '10', 'videogame_id': '108'}
+    {'user_id': '10', 'videogame_id': '108'},
+    {'user_id': '1', 'videogame_id': '104'},
+    {'user_id': '1', 'videogame_id': '105'}
 ]
 
 def initialize_db():
